@@ -26,10 +26,10 @@ function downloadData(exportingString, exportName, extension){
 
     downLoadAnchorNode.remove();
 
-//End of downLoadData()
+//End of downloadData()
 }
 
-//exemple: https://developers.google.com/chart/interactive/docs/gallery/table
+//exemple: https://www.w3schools.com/html/html_tables.asp
 let selectorDataSet = {selector_tableParentDiv : ".w3-white w3-padding notranslate w3-padding-16", 
                                  selector_totalPagesNum   : null, 
                                  selector_currentPageNum  : null, 
@@ -48,11 +48,11 @@ function downloadTableContent( arg =
                                 } ) {
     
 /*   Varsaylan sayfa "http://turgutreis.uab.gov.tr/TesisIslemleri". Varsaylan selectorParams da bu sayfadaki elementlere ait.
-* Öncelikle ilgili sayfaya gidip browser konsolunu açn (ctrl + f12). ve bu js sayfasndaki tüm kodu kopyalayp yaptrn. Ardndan bu fonksiyonu çarn
-* bu kodu baka bir internet sayfasnda kullanmak isterseniz selectorParams deerlerini belirlemek için bir obje tanmlamanz gerekir. Bunun gibi:
+* Ã–ncelikle ilgili sayfaya gidip browser konsolunu aÃ§n (ctrl + f12). ve bu js sayfasndaki tÃ¼m kodu kopyalayp yaptrn. Ardndan bu fonksiyonu Ã§arn
+* bu kodu baka bir internet sayfasnda kullanmak isterseniz selectorParams deerlerini belirlemek iÃ§in bir obje tanmlamanz gerekir. Bunun gibi:
 * {selector_tableParentDiv : "#jqgrid", selector_totalPagesNum : "#input_pjqgrid span", selector_currentPageNum : "#input_pjqgrid input", selector_returnFirstPage : "#first_pjqgrid"}
-* Bu parametreler JQUERY tarafndan ilgili HTML elementine ulamak için kullanlan string tipi deerlerdir.
-*    Fonksiyonu varsaylan websayfas için çaracanz zaman yalnzca downloadFacilityData() komutunu kullanmannz yeterli.
+* Bu parametreler JQUERY tarafndan ilgili HTML elementine ulamak iÃ§in kullanlan string tipi deerlerdir.
+*    Fonksiyonu varsaylan websayfas iÃ§in Ã§aracanz zaman yalnzca downloadFacilityData() komutunu kullanmannz yeterli.
 */  
 /*   The default page is "http://turgutreis.uab.gov.tr/TesisIslemleri". The default selectorParams are set according to this site
 * first of all open the page on the browser. Than copy paste this function to the console, then call this function
