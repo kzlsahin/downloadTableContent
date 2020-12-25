@@ -28,9 +28,9 @@ selector_totalPagesNum is the Query selector string for an element that indicate
 
 selector_currentPageNum is the Query selector string for an element that indicates the current page number (pageNumber = element.value);
 
-selector_returnFirstPage is the Query selector string for an element that opens the **first** page on click event. **if this is not availble, the first page should be openned manually**
+selector_returnFirstPage is the Query selector string for an element that opens the **first** page on click event. **if this is not available, the first page should be openned manually**
 
-selector_nextPage is the Query selector string for an element that opens the **next** page on click event. **if this is not availble, multipage tables cannot be downloaded**
+selector_nextPage is the Query selector string for an element that opens the **next** page on click event. **if this is not available, multipage tables cannot be downloaded**
 
 selector_tableRows is the Query selector string for the cell elements of the table (td)
 
