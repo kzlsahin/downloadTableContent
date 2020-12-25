@@ -2,11 +2,11 @@
 //Check for JQUERY
 if(!$(document)){
 
-    var jq = document.createElement('script');
+    let jqLib = document.createElement('script');
     
-    jq.src = "https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js";
+    jqLib.src = "https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js";
     
-    document.getElementsByTagName('head')[0].appendChild(jq);
+    document.getElementsByTagName('head')[0].appendChild(jqLib);
     
 }
 
