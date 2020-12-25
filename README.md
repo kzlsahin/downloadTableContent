@@ -7,16 +7,32 @@ Sometimes, there is a need to use some scripts via console on a page to get the 
 ### How to Use
 
 To download the table content on a page, you should call the function downloadTableContent(arg) where arg is an input object.
-The function has a default page predefined the input argument object. When you call the function for the default page, you may call the function without any argument. 
+The function has a default argument object for a default website. When you call the function for the default page, you may call the function without any argument. 
 
-The default page is "http://turgutreis.uab.gov.tr/TesisIslemleri". The default selectorParams are set according to this site.
-first of all open the page on the browser. Than copy paste this function to the console, then call this function
+As the default website is a protected app, I prepared a demo argument object for https://www.w3schools.com/html/html_tables.asp. You may open this website, open the console and copy-paste the script onto the console and then, call the function as downloadTableContent(selectorDataSet). 
 
-If you want to use this code on another website content, you should define an object to set the selectorParams like this:
+If you want to use this script on another website content, you should define an object to set the selectorParams like this:
 
-{selector_tableParentDiv : "#jqgrid", selector_totalPagesNum : "#input_pjqgrid span", selector_currentPageNum : "#input_pjqgrid input", selector_returnFirstPage : "#first_pjqgrid"}
+{selector_tableParentDiv  : "#jqgrid", 
+ selector_totalPagesNum    : "#input_pjqgrid span", 
+ selector_currentPageNum   : "#input_pjqgrid input", 
+ selector_returnFirstPage  : "#first_pjqgrid", 
+ selector_nextPage	        : null, 
+ selector_tableRows        : "#customers tbody tr" }
 
-the selector parameters are the string used by JQUERY to select the related HTML elements. 
+the selector parameters are the strings used by JQUERY to select the related HTML elements.
+
+selector_tableParentDiv is the JQuery selector string for 'div' element (may be table etc.) which is the parent of the table;
+
+selector_totalPagesNum is the Query selector string for an element that indicates the total number of pages if the table is divided into pages;
+
+selector_currentPageNum is the Query selector string for an element that indicates the current page number (pageNumber = element.value);
+
+selector_returnFirstPage is the Query selector string for an element that opens the **first** page on click event. **if this is not availble, the first page should be openned manually**
+
+selector_nextPage is the Query selector string for an element that opens the **next** page on click event. **if this is not availble, multipage tables cannot be downloaded**
+
+selector_tableRows is the Query selector string for the cell elements of the table (td)
 
 ### Need Help?
 
