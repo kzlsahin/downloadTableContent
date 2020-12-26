@@ -14,7 +14,7 @@ As the default website is a protected app, I prepared a demo argument object for
 If you want to use this script on another website content, you should define an object to set the selectorParams like this:
 
 ```javascript
-{selector_tableParentDiv  : "#jqgrid", 
+{selector_tableParentDiv   : "#jqgrid", 
  selector_totalPagesNum    : "#input_pjqgrid span", 
  selector_currentPageNum   : "#input_pjqgrid input", 
  selector_returnFirstPage  : "#first_pjqgrid", 
