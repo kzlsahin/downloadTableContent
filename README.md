@@ -25,19 +25,20 @@ the selector parameters are the strings used by JQUERY to select the related HTM
 
 selector_tableParentDiv is the JQuery selector string for 'div' element (may be table etc.) which is the parent of the table;
 
-selector_totalPagesNum is the Query selector string for an element that indicates the total number of pages if the table is divided into pages;
+selector_totalPagesNum is the JQuery selector string for an element that indicates the total number of pages if the table is divided into pages;
 
-selector_currentPageNum is the Query selector string for an element that indicates the current page number (pageNumber = element.value);
+selector_currentPageNum is the JQuery selector string for an element that indicates the current page number (pageNumber = element.value);
 
-selector_returnFirstPage is the Query selector string for an element that opens the **first** page on click event. **if this is not available, the first page should be openned manually**
+selector_returnFirstPage is the JQuery selector string for an element that opens the **first** page on click event. **if this is not available, the first page should be openned manually**
 
-selector_nextPage is the Query selector string for an element that opens the **next** page on click event. **if this is not available, multipage tables cannot be downloaded**
+selector_nextPage is the JQuery selector string for an element that opens the **next** page on click event. **if this is not available, multipage tables cannot be downloaded**
 
-selector_tableRows is the Query selector string for the cell elements of the table (td)
+selector_tableRows is the JQuery selector string for the cell elements of the table (td)
 
 ### Need Help?
 
 You may get in contact with me;
 
 @author: Mustafa SENTURK
+
 @email: mustafa.senturk@yaani.com
