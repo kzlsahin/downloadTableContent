@@ -12,14 +12,14 @@ The function has a default argument object for a default website. When you call 
 As the default website is a protected app, I prepared a demo argument object for https://www.w3schools.com/html/html_tables.asp. You may open this website, open the console and copy-paste the script onto the console and then, call the function as downloadTableContent(selectorDataSet). 
 
 If you want to use this script on another website content, you should define an object to set the selectorParams like this:
-
+'''javascript
 {selector_tableParentDiv  : "#jqgrid", 
  selector_totalPagesNum    : "#input_pjqgrid span", 
  selector_currentPageNum   : "#input_pjqgrid input", 
  selector_returnFirstPage  : "#first_pjqgrid", 
  selector_nextPage	        : null, 
  selector_tableRows        : "#customers tbody tr" }
-
+'''
 the selector parameters are the strings used by JQUERY to select the related HTML elements.
 
 selector_tableParentDiv is the JQuery selector string for 'div' element (may be table etc.) which is the parent of the table;
