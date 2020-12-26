@@ -1,8 +1,8 @@
 ## Table Content Downloader
 
-This JS script is to be used on a browser console to download contents of a table on the page. Sometimes it is needed to define some functions to get the table content on a page as there may be no way to do this by the user interface of the page.
+This JS script is to be used on a browser console to download contents of a table on the page. As it may be needed to define some functions to get the table content on a page as there may be no way to do this by the user interface of the page.
 
-Sometimes, there is a need to use some scripts via console on a page to get the contents of tables as there may not be default way to do so. One of my task under the Ministry of Transport was to take the data of our registered facilities from the tables on a website of a web application which belongs to the ministry. There had been no way to get that data except codding on the console. Then I write this script and share with any one who can benefit or may develop further.
+I have been in need of using codes via console on a page to get the contents of tables as there may not be a default way to do so. One of my tasks under the Ministry of Transport was to take the data of our registered facilities from the tables on a website of a web based application which belongs to the ministry. There had been no way to get that data except codding on the console. Then I write this script to be usable for different websites and somepeople may get benefit.
 
 ### How to Use
 
