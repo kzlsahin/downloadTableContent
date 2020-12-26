@@ -1,6 +1,6 @@
 ## Table Content Downloader
 
-This JS script is to be used on a browser console to download contents of a table on a page as a **CSV file**.. 
+This JS script is to be used on a browser console to download contents of a table on a page as a **CSV file**.
 As it may be needed to define some functions to get the table content on a page as there may be no way to do this by the user interface of the page.
 
 I have been in need of using codes via console on a page to get the contents of tables as there may not be a default way to do so. One of my tasks under the Ministry of Transport was to take the data of our registered facilities from the tables on a website of a web based application which belongs to the ministry. 
