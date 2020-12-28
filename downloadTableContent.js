@@ -30,13 +30,18 @@ function downloadData(exportingString, exportName, extension){
 }
 
 function findElemAttrs(tag_name){
-let allElems = document.getElementsByTagName(tag_name);
-allElems = Array.from(allElems) ;
-allElems.forEach(elem => elem.addEventListener("click", readAttrs)) ;
+	
+	let allElems = document.getElementsByTagName(tag_name);
 
-function readAttrs() { dat={id:this.id, class:this.className, tag:this.tagName}; 
-console.log(dat) ;
-}  
+	allElems = Array.from(allElems) ;
+
+	allElems.forEach(elem => elem.addEventListener("click", readAttrs)) ;
+
+	function readAttrs() { dat={id:this.id, class:this.className, tag:this.tagName}; 
+
+	console.log(dat) ;
+			      
+	}  
 
 }
 
