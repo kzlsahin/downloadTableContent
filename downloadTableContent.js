@@ -29,6 +29,17 @@ function downloadData(exportingString, exportName, extension){
 //End of downloadData()
 }
 
+function findElemAttrs(tag_name){
+let allElems = document.getElementsByTagName(tag_name);
+allElems = Array.from(allElems) ;
+allElems.forEach(elem => elem.addEventListener("click", readAttrs)) ;
+
+function readAttrs() { dat={id:this.id, class:this.className, tag:this.tagName}; 
+console.log(dat) ;
+}  
+
+}
+
 //exemple: https://www.w3schools.com/html/html_tables.asp
 let selectorDataSet = {selector_tableParentDiv : ".w3-white w3-padding notranslate w3-padding-16", 
                                  selector_totalPagesNum   : null, 
