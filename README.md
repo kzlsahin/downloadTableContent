@@ -37,6 +37,22 @@ selector_nextPage is the JQuery selector string for an element that opens the **
 
 selector_tableRows is the JQuery selector string for the cell elements of the table (td)
 
+### How to Find ELement Identification Attributes?
+
+Most of the websites have complicated tree of HTML elements. Using debugging tools of a browser may be a time consuming process.
+So I also added a simple function; findElemAttrs(tag_name)
+
+This function adds a click event listenner to the elements with the input tag name
+
+For example: 
+
+if you call function findElemAttrs("table"),
+
+this will add a event listenner to the all elements of type Table in the page. 
+When you click a table, the ID, Class and tagName will be printed on the console
+
+You may use this function to find other elements. For multi page tables, you may need buttons for nex page, first page, and an indicator for the current page number
+
 ### Need Help?
 
 You may get in contact with me;
