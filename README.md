@@ -51,7 +51,7 @@ if you call function findElemAttrs("table"),
 this will add a event listenner to the all elements of type Table in the page. 
 When you click a table, the ID, Class and tagName will be printed on the console
 
-You may use this function to find other elements. For multi page tables, you may need buttons for nex page, first page, and an indicator for the current page number
+You may use this function to find other elements. Forexample, while working on multi page tables, you may need to find buttons for the next page, the first page, and the indicator node for the current page number.
 
 ### Need Help?
 
