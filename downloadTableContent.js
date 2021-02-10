@@ -104,7 +104,7 @@ function downloadTableContent( arg =
     
         btn_returnFirstPage = btn_returnFirstPage.getElementsByTagName("div")[0];
         
-        button = $(selector_nextPage);
+        button = $(arg.selector_nextPage);
         
         multiPagedTable = true;
         
