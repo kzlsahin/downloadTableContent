@@ -29,6 +29,7 @@ function downloadData(exportingString, exportName, extension){
 //End of downloadData()
 }
 
+//read HTML elements id, class attributes by mouse clicks, choosing which elements to be searched
 function findElemAttrs(tag_name){
 	
 	let allElems = document.getElementsByTagName(tag_name);
@@ -63,14 +64,14 @@ function downloadTableContent( arg =
                                  selector_tableRows:".jqgrow.ui-row-ltr.ui-widget-content"
                                 } ) {
     
-/*   Varsaylan sayfa "http://turgutreis.uab.gov.tr/TesisIslemleri". Varsaylan selectorParams da bu sayfadaki elementlere ait.
+/* tr -  Varsaylan sayfa "http://turgutreis.uab.gov.tr/TesisIslemleri". Varsaylan selectorParams da bu sayfadaki elementlere ait.
 * Öncelikle ilgili sayfaya gidip browser konsolunu açn (ctrl + f12). ve bu js sayfasndaki tüm kodu kopyalayp yaptrn. Ardndan bu fonksiyonu çarn
 * bu kodu baka bir internet sayfasnda kullanmak isterseniz selectorParams deerlerini belirlemek için bir obje tanmlamanz gerekir. Bunun gibi:
 * {selector_tableParentDiv : "#jqgrid", selector_totalPagesNum : "#input_pjqgrid span", selector_currentPageNum : "#input_pjqgrid input", selector_returnFirstPage : "#first_pjqgrid"}
 * Bu parametreler JQUERY tarafndan ilgili HTML elementine ulamak için kullanlan string tipi deerlerdir.
 *    Fonksiyonu varsaylan websayfas için çaracanz zaman yalnzca downloadFacilityData() komutunu kullanmannz yeterli.
 */  
-/*   The default page is "http://turgutreis.uab.gov.tr/TesisIslemleri". The default selectorParams are set according to this site
+/* en - The default page is "http://turgutreis.uab.gov.tr/TesisIslemleri". The default selectorParams are set according to this site
 * first of all open the page on the browser. Than copy paste this function to the console, then call this function
 * If you want to use this code on another website content, you should define an object to set the selectorParams like this:
 * {selector_tableParentDiv : "#jqgrid", selector_totalPagesNum : "#input_pjqgrid span", selector_currentPageNum : "#input_pjqgrid input", selector_returnFirstPage : "#first_pjqgrid"}
