@@ -1,4 +1,4 @@
-
+"use strict";
 //Check for JQUERY
 if(!$(document)){
 
