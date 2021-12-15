@@ -36,13 +36,10 @@ function findElemAttrs(tag_name){
 
 	allElems = Array.from(allElems) ;
 
-	allElems.forEach(elem => elem.addEventListener("click", readAttrs)) ;
-
-	function readAttrs() { dat={id:this.id, class:this.className, tag:this.tagName}; 
-
-	console.log(dat) ;
-			      
-	}  
+	allElems.forEach(elem => elem.addEventListener("click", () => { 
+		dat={id:this.id, class:this.className, tag:this.tagName}; 
+		console.log(dat) ;
+			      } ) );
 
 }
 
