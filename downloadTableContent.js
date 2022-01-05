@@ -165,7 +165,7 @@ function downloadTableContent( arg =
 
 	//console.log(rowsAsStringArray);
        
-        for(stringArr of rowsAsStringArray){
+        for(let stringArr of rowsAsStringArray){
            
 	    rowStr = stringArr.reduce((strArr, str) => strArr + ";" + str);
 	    
